@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Case</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: wheat;
+        }
+        h1 {
+            color: aqua;
+            font-size: xxx-large;
+        }
+        h2{
+            margin-top: 0%;
+            font-size: xx-large;
+        }
+        button{
+            margin-top: 50px;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><b>Prompt method Example</b></h1>
+    <h2> JavaScript prompt() method</h2>
+    <button onclick = "fun()">Click me</button>
+    <p id="para" style="color: rgb(155, 92, 40); font-size: 50px;"></p>
+    <script>
+         function fun() {
+         var a = prompt("Enter some text", "Hello");
+        if (a != null) {
+        var pref = document.getElementById("para")
+        pref.innerHTML = "Text is :  " + a;
+         }
+        }
+    </script>
+
+
+</body>
+
+</html>
